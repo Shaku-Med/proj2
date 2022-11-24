@@ -1,0 +1,22 @@
+{
+  "short_name": "Listen",
+  "name": "Listen",
+  "icons": [
+    {
+      "src": "https://logos.badzybaddest.repl.co/logo.png",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://logos.badzybaddest.repl.co/logo.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "https://logos.badzybaddest.repl.co/logo.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    }
+  ],
+  "display": "standalone"
+}

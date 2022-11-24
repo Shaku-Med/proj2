@@ -1,0 +1,596 @@
+:root{ 
+  color-scheme: dark;
+}
+
+.signUP_part { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.signUP_part form { 
+  width: 100%;
+  max-width: 500px;
+}
+
+body{ 
+  background: #1a202c;
+  color: white;
+  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.signUP_part div{ 
+  border-bottom: 1px solid #f7fafc;
+}
+
+.log_part { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.log_part form { 
+  width: 100%;
+  max-width: 500px;
+}
+
+#preloaders{ 
+  background: #1a202c;
+  transition: all .5s ease-in-out;
+}
+
+#preloaders.prel { 
+  visibility: hidden;
+  opacity: 0;
+}
+
+.log_out_modal { 
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.log_out_modal.show_modals{ 
+  visibility: visible;
+  opacity: 1;
+}
+
+.audio_containser { 
+  width: 100%;
+  background: #121824;
+  padding:10px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  border-top: 2px solid #283142;
+}
+
+.user_tools { 
+  position: relative;
+}
+
+#Song_image{ 
+  position: absolute;
+  top:-180px;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.tip_up_usr { 
+  position: absolute;
+  top:-400px;
+  background: #222a39;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  overflow-x: hidden;
+  height: 300px;
+  width: 400px;
+  padding:10px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+
+
+.tip_up_usr.tip_show { 
+  top:-300px;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.text_m::-webkit-scrollbar{ 
+  display: none;
+}
+
+.text_m { 
+  overflow-x: hidden;
+  position: relative;
+}
+
+input[type=range] {
+  height: 5px;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+output{ 
+  background: #28314275;
+  color: white;
+  padding: 4px 12px;
+  position: absolute;
+  border-radius: 4px;
+  left: 0;
+  transform: translateX(-50%);
+  top:-30px;
+  border: 2px solid #283142;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+#ranging:hover ~ output{ 
+  visibility: visible;
+  opacity: 1;
+  background: #222a39;
+  border: 2px solid #283142;
+}
+
+#ranging { 
+  transition: all .3s ease-in-out;
+}
+
+.trap_name { 
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.name_artists { 
+  width: 200px;
+}
+
+.hov_usr { 
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.hero_image_center { 
+  background-image: url('https://wallpapercave.com/wp/wp2704830.jpg');
+  width: 100%;
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+  border-radius: 10px;
+  background-repeat:no-repeat;
+  background-clip: border-box;
+  background-origin: border-box;
+  background-blend-mode:multiply;
+  height: 100%;
+  
+}
+
+.hotest_poa { 
+  width: 100%;
+}
+
+.hotest_poa img { 
+  width: 100%;
+  height: 100%;
+}
+
+.welcome_home { 
+  max-width: 1200px;
+  padding: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main_home { 
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+#bestwiz { 
+  text-overflow: ellipsis;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 600px;
+}
+
+.play_button { 
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+.play_button i { 
+  font-size: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.know_play { 
+  display: none;
+}
+
+/* Slidder... */
+
+
+#slider { 
+  height: 500px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+.grid_play { 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contains { 
+  width: 100%;
+  margin: auto;
+}
+
+.sub_contain { 
+  width: 85%;
+  margin: auto;
+  transition: .5s ease-in-out;
+}
+
+.controllers { 
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+}
+
+#controls { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+.controllers i { 
+  color: white;
+  font-size: 1rem;
+}
+
+.prev_now, .next_now { 
+  background: #283142;
+  padding:10px;
+  cursor: pointer;
+  width: 50px;
+}
+
+.cov_m { 
+  width: 275px;
+  height: 300px;
+  flex-shrink: 0;
+  padding-right: 10px;
+  position: relative;
+  z-index: 1000;
+  border: 1px solid #283142;
+  padding:10px;
+  border-radius: 5px;
+  transition: .3s ease-in-out;
+  scroll-snap-align: center;
+}
+
+.slid_img i { 
+  position: absolute;
+  top:50%;
+  transform: translateX(-50%);
+  left: 50%;
+  background: #121824;
+  height: 5rem;
+  border: 1px solid #283142;
+  width: 5rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.cov_m:hover{ 
+ box-shadow:  0 0 0 1000px #12182486;
+ z-index: 10000;
+}
+
+.slid_img img { 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.my_slider { 
+  display: inline-flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+  gap:10px;
+  overflow: auto;
+  margin-top: 40px;
+  width: 100%;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.my_slider::-webkit-scrollbar{ 
+  display: none;
+}
+
+.cov_m img { 
+  cursor: pointer;
+}
+
+.songs_in_grid { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  flex-wrap: wrap;
+  padding:10px;
+}
+
+.cov_m_1 { 
+  position: relative;
+  width: 1000%;
+  flex: 1 1 10rem;
+  border: 1px solid #283142;
+  padding:10px;
+}
+
+.cov_m_1 img { 
+  cursor: pointer;
+}
+
+.mage_cont .h5 { 
+  overflow: hidden;
+  width: 100%;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mage_cont a { 
+  overflow: hidden;
+  width: 100%;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bg_img_s { 
+  background-image: url('https://cdn.windowsreport.com/wp-content/uploads/2022/03/Wallpapers.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.boot_btn { 
+  position: absolute;
+  top:100px;
+  right: 20px;
+}
+
+
+.song_g { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap:10px;
+}
+
+.song_1:hover{ 
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.user_info { 
+  min-height: 500px;
+  display: flex;
+  align-items:flex-start;
+  justify-content: start;
+  flex-direction: column;
+  max-width: 1000px;
+}
+
+.u1 { 
+  text-align: start;
+}
+
+.u1 { 
+  display: flex;
+  padding:20px;
+  background: #121824;
+  margin-bottom: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #283142;
+  border-radius: 5px;
+  gap:10px;
+}
+
+.previw_look_llike { 
+  max-width: 1000px;
+  width: 100%;
+}
+
+.play_this  
+{ 
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #000000a4;
+  transition: .5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.play_this.dis { 
+  visibility: visible;
+  opacity: 1;
+}
+@media screen and (max-width: 950px) {
+  .signUP_part { 
+    height: 100%;
+  }
+
+  .log_part { 
+    height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .slider_part { 
+    position: absolute;
+    top: -40px;
+    padding:10px;
+    background: #050c1a;
+    left: 0;
+  }
+
+  #Song_image { 
+    top: -220px;
+  }
+
+  #bestwiz { 
+    font-size: 40px;
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #mobile-menu { 
+    height: 0;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+  }
+
+  #mobile-menu.prev{ 
+    height: 100vh;
+  }
+
+  .name_artists { 
+    width: 170px;
+  }
+
+  .user_info { 
+    height: 500px;
+  }
+
+  .welcome_home { 
+    padding:0px;
+    border-radius: 0;
+  }
+
+  .hero_image_center { 
+    height: 250px;
+    border-radius: 0px;
+  }
+
+  #bestwiz { 
+    font-size: 30px;
+    max-width: 300px;
+  }
+
+  .sub_contain { 
+    width: 100%;
+  }
+
+  .controllers { 
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px){ 
+.name_artists { 
+  width: 150px;
+}
+
+  .controls { 
+    text-align: center;
+  }
+
+ .audio_containser { 
+  justify-content: space-around;
+ }
+
+ .tip_up_usr { 
+  width: 300px;
+ }
+
+ #bestwiz { 
+  font-size: 30px;
+  max-width: 300px;
+}
+}
+
+@media screen and (max-width: 320px){ 
+.name_artists { 
+  width: 100px;
+}
+
+  .controls { 
+    text-align: center;
+  }
+
+ .audio_containser { 
+  justify-content: space-around;
+ }
+
+ #bestwiz { 
+  font-size: 30px;
+  max-width: 250px;
+}
+}
